@@ -1,0 +1,23 @@
+<em class="red">Let's add new route</em>
+
+<h1 class="fragment">Complex example</h1>
+
+<pre class="fragment"><code>
+  $config = new Config(include 'config.php');
+  $container = new Container([
+    "config" => $config,
+    "db" => new ORM($config["mysql"]),
+    "view" => new Mustache_Engine(),
+  ]);
+  $routes["/user"] = function($param) use ($container) {
+    $user = $container->get("db")->loadUser($param["id"]);
+    if (empty($user) {
+      throw new UserNotFoundException();
+    }
+    return $container->get("view")
+      ->render("Hello {{user}}", $user->name);
+  };
+
+</code></pre>
+
+<small class="fragment violet">* nice to have lazy-initialize for services</small>

@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Building modern web framework for dummies",
+    "packageVersion": "0.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "zviryatko",
+    "githubRepository": "building-modern-web-framework-for-dummies"
+  }
+}

@@ -1,0 +1,18 @@
+<em class="red">Let's put it all together</em>
+
+<h1 class="fragment">Micro-framework</h1>
+
+<pre class="fragment"><code>
+  // index.php
+  $routes = ["/foo" => function() { return "bar"; }]
+  $dispatch = function($url, $params) use ($routes) {
+    if (empty($routes[$url])) {
+      throw new PageNotFoundException();
+    }
+    return $routes[$url]($params);
+  }
+  echo $dispatch($_REQUEST["q"], $_GET + $_POST);
+
+</code></pre>
+
+<small class="fragment violet">*<code>$_REQUEST["q"]</code> works only with clean-urls</small>
