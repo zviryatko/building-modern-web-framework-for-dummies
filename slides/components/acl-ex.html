@@ -1,0 +1,21 @@
+<h1 class="orange">Access Control List</h1>
+
+<pre class="fragment"><code>
+  $config["acl"] = [
+    "admin" => ["view", "edit"],
+    "user" => ["view"],
+  ];
+
+  $container["acl"] = function($perm, $user) use ($container) {
+    $user = $container->get("db")->loadUser($user_id);
+    $roles = $container->get("config")->get("acl");
+    return in_array($perm, $roles[$user->role]);
+  }
+
+  // usage
+  $acl = $container->get("acl")
+  if ( $acl("edit", $user) ) { }
+
+</code></pre>
+
+<p class="fragment violet">sounds simple, but we need to integrate it with other components, like router, controller, renderer...</p>

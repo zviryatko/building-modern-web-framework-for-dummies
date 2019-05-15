@@ -1,0 +1,10 @@
+<h1 class="red">Access Control List</h1>
+
+<h4 class="fragment">When the user open the <code>/admin</code> URL</h4>
+<ul>
+  <li class="fragment">If anonymous go to login page <span class="fragment red">(router affected)</span></li>
+  <li class="fragment">If has <code>edit</code> access show form <span class="fragment red">(controller affected)</span></li>
+  <li class="fragment">If admin show the advanced toolbar <span class="fragment red">(renderer affected)</span></li>
+</ul>
+
+<p class="fragment violet"><em>So it passes through the entire application</em></p>
