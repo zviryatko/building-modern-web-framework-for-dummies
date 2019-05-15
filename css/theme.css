@@ -309,6 +309,9 @@ body {
 .green {
   color: #859900 !important; }
 
+.very-bold {
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black !important; }
+
 .full-width {
   min-width: 90%;
   margin: 0 10%; }

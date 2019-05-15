@@ -34,9 +34,13 @@
     "psr/achievements.html",
     "psr/dreams.html",
 
-    "middleware/a",
+    "middleware/predictability-problem.html",
+    "middleware/request-response-flow.html",
+    "middleware/middleware-ex.html",
+    "middleware/middleware-everywhere.html",
+    "middleware/no-way.html",
+    "middleware/summary.html",
 
-    "examples/a",
-
-    "summary/a"
+    "finish/thats-all.html",
+    "finish/thanx-for-watching.html"
 ]
