@@ -29,11 +29,14 @@
     "components/summary.html",
     "components/much-more.html",
 
-    "middleware/",
+    "psr/what-is-psr.html",
+    "psr/purpose.html",
+    "psr/achievements.html",
+    "psr/dreams.html",
 
-    "PSR/",
+    "middleware/a",
 
-    "examples/",
+    "examples/a",
 
-    "summary/"
+    "summary/a"
 ]
