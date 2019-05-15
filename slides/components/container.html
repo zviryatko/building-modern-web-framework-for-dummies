@@ -1,12 +1,15 @@
 <h1>Service Container</h1>
 
-<h4 class="fragment blue">or Service Manager</h4>
+<h4 class="fragment blue">Everything what you should know</h4>
 
-<ul>
-  <li class="fragment">It sticks together all services</li>
-  <li class="fragment">Usually looks like Singleton pattern (immutable array)</li>
-  <li class="fragment">Sometimes responsible for creating services</li>
-  <li class="fragment">Right now most popular way to initialize services</li>
-</ul>
+<pre class="fragment"><code>
+  namespace Psr\Container;
 
-<p class="fragment">Example: <a href="https://github.com/silexphp/Pimple">github.com/silexphp/Pimple</a></p>
+  interface ContainerInterface
+  {
+    public function get($id);
+
+    public function has($id);
+  }
+
+</code></pre>
